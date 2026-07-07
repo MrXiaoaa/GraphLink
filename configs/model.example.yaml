@@ -1,0 +1,11 @@
+models:
+  chat_provider: openai-compatible
+  chat_base_url_env: OPENAI_BASE_URL
+  chat_api_key_env: OPENAI_API_KEY
+  chat_model_env: VLLM_MODEL_NAME
+  embedding_model_env: GRAPHLINK_EMBEDDING_MODEL
+
+runtime:
+  request_timeout_sec: 180
+  max_retries: 2
+  default_workers: 4

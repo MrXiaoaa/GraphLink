@@ -1,0 +1,7 @@
+GraphLink release package
+
+This package contains the GraphLink schema-linking implementation and small experiment adapters extracted from a research workspace. GraphLink itself is an independent search-and-prune schema-linking method. A few compatibility utilities adapt third-party Spider2.0-Lite execution/evaluation code, including ReFoRCE-derived helpers, and are kept separate from the core method.
+
+The release package intentionally excludes private credentials, generated experiment outputs, historical retry scripts, local logs, and full third-party baseline repositories. Users should install external baselines separately when they want to reproduce CHESS/KaSLA-native prompts exactly.
+
+Policy-training helpers are included as release templates. Attached/example parquet data is not committed; users should regenerate datasets locally.

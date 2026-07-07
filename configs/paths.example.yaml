@@ -1,0 +1,9 @@
+paths:
+  data_root: data
+  spider_root: data/spider
+  bird_root: data/bird
+  spider2lite_root: data/spider2-lite
+  examples_lite: data/examples_lite
+  database_graphs_dir: data/database_graphs_0206_enhanced
+  unified_schema_linking_dir: data/unified_schema_linking
+  output_root: outputs

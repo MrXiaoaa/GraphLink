@@ -1,0 +1,15 @@
+policy_training:
+  examples_root: data/examples_lite
+  qa_jsonl: outputs/policy_training/generated_qa.jsonl
+  all_parquet: outputs/policy_training/all.parquet
+  train_parquet: examples/policy_training/train.parquet
+  val_parquet: outputs/policy_training/val.parquet
+  k_tables: 3
+  n_questions_per_example: 5
+  val_ratio: 0.05
+  base_model_env: BASE_MODEL
+  verl_module: verl.trainer.main_ppo
+
+reward:
+  function: graphlink/policy_training/schema_filtering_reward.py:compute_score
+  default_signal: table_f1_plus_sql_presence

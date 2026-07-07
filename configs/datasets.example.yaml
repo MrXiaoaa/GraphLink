@@ -1,0 +1,14 @@
+datasets:
+  spider:
+    source: external_download_or_local_copy
+    prepared_examples: data/examples_spider
+  bird:
+    source: external_download_or_local_copy
+    prepared_examples: data/examples_bird
+  spider2lite:
+    source: external_download_or_local_copy
+    prepared_examples: data/examples_lite
+
+notes:
+  - Dataset archives are license-controlled and are not committed to this repository.
+  - Set SPIDER_ZIP, BIRD_ZIP, or SPIDER2LITE_ZIP to local files or URLs before running scripts/00_download_data.sh.

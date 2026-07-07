@@ -1,0 +1,35 @@
+# Data and generated artifacts
+/data/
+datasets/
+outputs/
+runs/
+logs/
+task_logs/
+*.log
+*.jsonl.tmp
+
+# Credentials and local secrets
+.env
+.env.*
+*_credential.json
+*credential*.json
+*.pem
+*.key
+
+# Python caches
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.venv/
+venv/
+
+# Large model/cache files
+.cache/
+models/
+*.pt
+*.safetensors
+
+# Bundled policy-training sample parquet
+!graphlink/policy_training/data/
+!graphlink/policy_training/data/train.parquet
+!examples/policy_training/train.parquet
